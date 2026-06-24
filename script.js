@@ -43,3 +43,17 @@ tabButtons.forEach((button) => {
     });
   });
 });
+
+const faqButtons = document.querySelectorAll(".faq-question");
+
+faqButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const willOpen = button.getAttribute("aria-expanded") !== "true";
+
+    button.setAttribute("aria-expanded", String(willOpen));
+    if (answer) {
+      answer.hidden = !willOpen;
+    }
+  });
+});
