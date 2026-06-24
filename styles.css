@@ -1397,3 +1397,39 @@ button {
     width: 100%;
   }
 }
+/* About overview table refinement */
+.overview-card dl {
+  margin: 0;
+}
+
+.overview-card dl > div {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 26px;
+  border-bottom: 1px solid var(--border);
+}
+
+.overview-card dl > div:last-child {
+  border-bottom: 0;
+}
+
+.overview-card dt {
+  color: var(--brown);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.overview-card dd {
+  margin: 0;
+  color: var(--brown-dark);
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .overview-card dl > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 16px 20px;
+  }
+}
