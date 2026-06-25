@@ -203,7 +203,7 @@ button {
 }
 
 .hero-copy-card {
-  width: min(650px, calc(100% - 40px));
+  width: min(760px, calc(100% - 40px));
   margin-inline: auto;
   padding: 38px 44px 34px;
   border: 1px solid rgba(122, 82, 48, 0.18);
@@ -837,7 +837,7 @@ button {
   }
 
   .hero-copy-card {
-    width: min(620px, calc(100% - 24px));
+    width: min(720px, calc(100% - 24px));
     margin-inline: auto;
   }
 
