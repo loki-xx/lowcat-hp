@@ -1525,3 +1525,12 @@ button {
     padding: 16px;
   }
 }
+/* Final hero layout refinement */
+.hero-copy-wrap{margin-top:32px;}
+.hero-copy-card{width:min(1040px,100%);padding:42px 56px 38px;text-align:center;}
+.hero h1{font-size:clamp(38px,4.5vw,56px);line-height:1.35;}
+.hero-lead{max-width:780px;margin-inline:auto;}
+.hero-actions{justify-content:center;}
+.hero-copy-card .button-note{margin-left:0;text-align:center;}
+@media (max-width:950px){.hero-copy-wrap{margin-top:24px;}.hero-copy-card{width:min(760px,100%);padding:36px 32px 32px;}}
+@media (max-width:640px){.hero-copy-wrap{width:calc(100% - 32px);margin-top:18px;}.hero-copy-card{width:100%;padding:30px 23px 27px;text-align:left;}.hero h1{font-size:clamp(27px,8.4vw,38px);}.hero-actions{justify-content:stretch;}}
