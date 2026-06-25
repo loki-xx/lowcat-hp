@@ -204,7 +204,7 @@ button {
 
 .hero-copy-card {
   width: min(650px, calc(100% - 40px));
-  margin-left: 34px;
+  margin-inline: auto;
   padding: 38px 44px 34px;
   border: 1px solid rgba(122, 82, 48, 0.18);
   border-radius: 24px;
@@ -838,7 +838,7 @@ button {
 
   .hero-copy-card {
     width: min(620px, calc(100% - 24px));
-    margin-left: 12px;
+    margin-inline: auto;
   }
 
   .feature-grid {
@@ -1432,4 +1432,9 @@ button {
     gap: 6px;
     padding: 16px 20px;
   }
+}
+.copyright {
+  margin: 0;
+  padding: 18px 24px;
+  text-align: center;
 }
