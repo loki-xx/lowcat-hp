@@ -3,6 +3,7 @@
   --cream: #fdf9f3;
   --brown-dark: #4a2e12;
   --brown: #7a5230;
+  --brown-md: #7A5230;
   --brown-light: #b8885a;
   --line-green: #06c755;
   --white: #fff;
@@ -1539,3 +1540,85 @@ button {
 /* LP target and detail flow sections */
 .section-illustration{width:100%;max-width:560px;display:block;margin:0 auto 32px;border-radius:24px;box-shadow:0 16px 36px rgba(74,46,18,.08)}
 .target-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.target-item{padding:14px 16px;border:1.5px solid rgba(122,82,48,.22);border-radius:var(--radius);color:var(--brown-dark);background:var(--cream);font-size:.92rem;font-weight:700}.lp-detail-flow .flow-list{display:flex;flex-direction:column;gap:20px;max-width:900px;margin-inline:auto}.lp-detail-flow .flow-list::before{display:none}.lp-detail-flow .flow-item{display:flex;gap:16px;align-items:flex-start;padding:20px 22px;border-radius:var(--radius);background:var(--cream);box-shadow:0 12px 30px rgba(74,46,18,.06)}.lp-detail-flow .flow-num{min-width:42px;color:var(--brown-light);font-size:1.5rem;font-weight:900;line-height:1}.lp-detail-flow .flow-item h3{margin:0 0 4px;color:var(--brown-dark);font-size:.98rem;font-weight:900}.lp-detail-flow .flow-item p{margin:0;color:var(--brown);font-size:.88rem;line-height:1.8}.mid-cta{padding:40px 24px;background:var(--brown-dark)}.btn-line{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 26px;border-radius:999px;color:var(--white);background:var(--line-green);font-weight:900;box-shadow:0 10px 24px rgba(6,199,85,.22)}@media (max-width:640px){.lp-detail-flow .flow-item{padding:18px}}
+
+
+/* Line SVG icon refinement */
+.line-svg {
+  width: 1.75em;
+  height: 1.75em;
+  stroke: var(--brown-md);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  display: inline-block;
+  vertical-align: middle;
+}
+.feature-icon .line-svg,
+.flow-icon .line-svg,
+.icon .line-svg {
+  width: 2rem;
+  height: 2rem;
+}
+.line-icon .line-svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+}
+.target-item .line-svg {
+  margin-right: 8px;
+}
+.free-note {
+  margin-top: 8px !important;
+  color: #f1e4d6 !important;
+  font-size: 12px !important;
+  line-height: 1.7;
+}
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--cream);
+  box-shadow: var(--shadow);
+}
+.legal-table th,
+.legal-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.legal-table th {
+  width: 220px;
+  color: var(--brown-dark);
+  background: rgba(184, 136, 90, 0.12);
+  font-weight: 900;
+}
+.legal-table tr:last-child th,
+.legal-table tr:last-child td {
+  border-bottom: 0;
+}
+.legal-table a {
+  color: var(--brown-dark);
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 640px) {
+  .legal-table,
+  .legal-table tbody,
+  .legal-table tr,
+  .legal-table th,
+  .legal-table td {
+    display: block;
+    width: 100%;
+  }
+  .legal-table th {
+    padding-bottom: 6px;
+  }
+  .legal-table td {
+    padding-top: 6px;
+  }
+}
