@@ -1622,3 +1622,6 @@ button {
     padding-top: 6px;
   }
 }
+
+.email-note { font-size: 0.86rem; color: var(--text-sub); margin-top: 8px; }
+.email-note a, .footer-office a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
