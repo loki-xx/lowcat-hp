@@ -82,6 +82,11 @@ button {
   backdrop-filter: blur(12px);
 }
 
+/* Keep the off-canvas mobile nav from widening the page */
+.site-header {
+  overflow-x: clip;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -1644,5 +1649,17 @@ button {
 @media (max-width: 950px) {
   .strength-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Let long prices wrap on phones instead of widening the card */
+@media (max-width: 640px) {
+  .lp-price-grid,
+  .lp-price-grid.two {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .price {
+    white-space: normal;
+    word-break: keep-all;
   }
 }
