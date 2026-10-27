@@ -43,6 +43,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -1625,3 +1626,23 @@ button {
 
 .email-note { font-size: 0.86rem; color: var(--text-sub); margin-top: 8px; }
 .email-note a, .footer-office a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Top page strengths section */
+.strengths-section {
+  background: var(--cream);
+}
+.strengths-section .section-heading {
+  max-width: 760px;
+}
+.strength-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.strengths-section .feature-card {
+  min-height: 0;
+  background: var(--bg);
+}
+@media (max-width: 950px) {
+  .strength-grid {
+    grid-template-columns: 1fr;
+  }
+}

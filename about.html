@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -37,8 +38,6 @@
       color: var(--text);
       line-height: 1.8;
     }
-
-    a { color: inherit; text-decoration: none; }
 
     /* ── HEADER ── */
     header {
@@ -340,6 +339,25 @@
     footer nav a { color: var(--text-sub); }
     footer nav a:hover { color: var(--brown-dk); }
     .copyright { font-size: 0.75rem; color: var(--brown-lt); }
+
+    /* ── 共通CSS（styles.css）との調整：このページ独自の見た目を維持 ── */
+    .logo { line-height: inherit; }
+    .nav-line { box-shadow: none; }
+    .mobile-nav .nav-line { margin-top: 0; }
+    .page-hero .eyebrow::before { content: none; }
+    .page-hero h1 { margin: 0; letter-spacing: normal; }
+    .inner { width: auto; }
+    .section-title { text-align: left; letter-spacing: normal; }
+    .btn-line { min-height: 0; box-shadow: none; }
+    .btn-line .line-icon {
+      display: inline-flex;
+      width: auto;
+      height: auto;
+      border-radius: 0;
+      color: inherit;
+      background: none;
+    }
+    .copyright { padding: 0; }
 
     @media (max-width: 640px) {
       nav { display: none; }
