@@ -1663,3 +1663,25 @@ button {
     word-break: keep-all;
   }
 }
+
+/* 相続ページ：関連手続きの横長カード */
+.also-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 18px;
+  text-align: left;
+  min-height: 0;
+}
+.also-card .feature-icon { flex-shrink: 0; margin-bottom: 0; }
+.also-card h3 { margin-top: 4px; }
+.also-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--brown-light);
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .also-card { flex-direction: column; gap: 12px; }
+}
