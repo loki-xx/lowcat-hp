@@ -43,6 +43,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -79,6 +80,11 @@ button {
   border-bottom: 1px solid var(--border);
   background: rgba(253, 249, 243, 0.94);
   backdrop-filter: blur(12px);
+}
+
+/* Keep the off-canvas mobile nav from widening the page */
+.site-header {
+  overflow-x: clip;
 }
 
 .header-inner {
@@ -1625,3 +1631,35 @@ button {
 
 .email-note { font-size: 0.86rem; color: var(--text-sub); margin-top: 8px; }
 .email-note a, .footer-office a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Top page strengths section */
+.strengths-section {
+  background: var(--cream);
+}
+.strengths-section .section-heading {
+  max-width: 760px;
+}
+.strength-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.strengths-section .feature-card {
+  min-height: 0;
+  background: var(--bg);
+}
+@media (max-width: 950px) {
+  .strength-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Let long prices wrap on phones instead of widening the card */
+@media (max-width: 640px) {
+  .lp-price-grid,
+  .lp-price-grid.two {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .price {
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
